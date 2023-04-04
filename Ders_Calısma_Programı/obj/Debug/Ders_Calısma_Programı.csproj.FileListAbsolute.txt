@@ -1,0 +1,14 @@
+E:\c#\Ders_Calısma_Programı\Ders_Calısma_Programı\bin\Debug\Ders_Calısma_Programı.exe.config
+E:\c#\Ders_Calısma_Programı\Ders_Calısma_Programı\bin\Debug\Ders_Calısma_Programı.exe
+E:\c#\Ders_Calısma_Programı\Ders_Calısma_Programı\bin\Debug\Ders_Calısma_Programı.pdb
+E:\c#\Ders_Calısma_Programı\Ders_Calısma_Programı\obj\Debug\Ders_Calısma_Programı.csproj.AssemblyReference.cache
+E:\c#\Ders_Calısma_Programı\Ders_Calısma_Programı\obj\Debug\Ders_Calısma_Programı.Properties.Resources.resources
+E:\c#\Ders_Calısma_Programı\Ders_Calısma_Programı\obj\Debug\Ders_Calısma_Programı.csproj.GenerateResource.cache
+E:\c#\Ders_Calısma_Programı\Ders_Calısma_Programı\obj\Debug\Ders_Calısma_Programı.csproj.CoreCompileInputs.cache
+E:\c#\Ders_Calısma_Programı\Ders_Calısma_Programı\obj\Debug\Ders_Calısma_Programı.exe
+E:\c#\Ders_Calısma_Programı\Ders_Calısma_Programı\obj\Debug\Ders_Calısma_Programı.pdb
+E:\c#\Ders_Calısma_Programı\Ders_Calısma_Programı\obj\Debug\Ders_Calısma_Programı.ElektrkFrm.resources
+E:\c#\Ders_Calısma_Programı\Ders_Calısma_Programı\obj\Debug\Ders_Calısma_Programı.DersPrgrmFrm.resources
+E:\c#\Ders_Calısma_Programı\Ders_Calısma_Programı\obj\Debug\Ders_Calısma_Programı.GirisFrm.resources
+E:\c#\Ders_Calısma_Programı\Ders_Calısma_Programı\obj\Debug\Ders_Calısma_Programı.UyeKayitFrm.resources
+E:\c#\Ders_Calısma_Programı\Ders_Calısma_Programı\obj\Debug\Ders_Calısma_Programı.BlgsyrFrm.resources
