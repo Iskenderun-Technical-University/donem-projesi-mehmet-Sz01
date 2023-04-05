@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Ders_Calısma_Programı
 {
@@ -17,18 +18,34 @@ namespace Ders_Calısma_Programı
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        SqlConnection baglanti = new SqlConnection("Data Source=MEHMET\\SQLEXPRESS;Initial Catalog=Ders_Calısma;Integrated Security=True");
+
+        private void KayitBtn_Click(object sender, EventArgs e)
         {
-            DersPrgrmFrm fr1 = new DersPrgrmFrm();
-            fr1.Show();
+            UyeKayitFrm frm = new UyeKayitFrm();
+            frm.Show();
             this.Hide();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void GirisBtn_Click(object sender, EventArgs e)
         {
-            UyeKayitFrm fr1 = new UyeKayitFrm();
-            fr1.Show();
-            this.Hide();
+
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("Select * From Tbl_UyeGrs where UyeKullaniciAd = @p1 and UyeSifre = @p2", baglanti);
+            komut.Parameters.AddWithValue("@p1", TxtAd.Text);
+            komut.Parameters.AddWithValue("@p2", TxtSifre.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+            if (dr.Read())
+            {
+                DersPrgrmFrm frm = new DersPrgrmFrm();
+                frm.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Hatalı Kullanıcı Adı ya da Şifre");
+            }
+            baglanti.Close();
         }
     }
 }
