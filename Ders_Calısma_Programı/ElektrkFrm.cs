@@ -34,21 +34,19 @@ namespace Ders_Calısma_Programı
             string metin = PzrtsiEkleTxtBox.Text;
             PzrtsiChckLstBox.Items.Add(metin);
             PzrtsiEkleTxtBox.Text = "";
-            MessageBox.Show("Ders eklendi");
         }
 
         private void PzrtsiCikar_Click(object sender, EventArgs e)
         {
             baglanti.Open();
             SqlCommand Komutsil = new SqlCommand("Delete From Tbl_Elektrik Where DersAd = @k1", baglanti);
-            Komutsil.Parameters.AddWithValue("@k1", PzrtsiCikarTxtBox.Text);
+            Komutsil.Parameters.AddWithValue("@k1", PzrtsiChckLstBox.Text);
             Komutsil.ExecuteNonQuery();
             baglanti.Close();
 
             int indeks = PzrtsiChckLstBox.SelectedIndex;
             PzrtsiChckLstBox.Items.RemoveAt(indeks);
             PzrtsiCikarTxtBox.Text = "";
-            MessageBox.Show("Kayıt Silindi");
         }
 
         private void PzrtsiChckLstBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -60,6 +58,12 @@ namespace Ders_Calısma_Programı
 
         private void SalıEkle_Click(object sender, EventArgs e)
         {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Tbl_Elektrik (DersAd) values (@p1)", baglanti);
+            komut.Parameters.AddWithValue("@p1", SalıEkleTxtBox.Text);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+
             string metin1 = SalıEkleTxtBox.Text;
             SaliChckLstBox.Items.Add(metin1);
             SalıEkleTxtBox.Text = "";
@@ -67,6 +71,12 @@ namespace Ders_Calısma_Programı
 
         private void SalıCikar_Click(object sender, EventArgs e)
         {
+            baglanti.Open();
+            SqlCommand Komutsil = new SqlCommand("Delete From Tbl_Elektrik Where DersAd = @k1", baglanti);
+            Komutsil.Parameters.AddWithValue("@k1", SaliChckLstBox.Text);
+            Komutsil.ExecuteNonQuery();
+            baglanti.Close();
+
             int indeks = SaliChckLstBox.SelectedIndex;
             SaliChckLstBox.Items.RemoveAt(indeks);
             SaliCikarTxtBox.Text = "";
@@ -81,6 +91,12 @@ namespace Ders_Calısma_Programı
 
         private void CrsmbEkle_Click(object sender, EventArgs e)
         {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Tbl_Elektrik (DersAd) values (@p1)", baglanti);
+            komut.Parameters.AddWithValue("@p1", CrsmbEkleTxtBox.Text);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+
             string metin2 = CrsmbEkleTxtBox.Text;
             CrsmbChckLstBox.Items.Add(metin2);
             CrsmbEkleTxtBox.Text = "";
@@ -88,6 +104,12 @@ namespace Ders_Calısma_Programı
 
         private void CrsmbCıkar_Click(object sender, EventArgs e)
         {
+            baglanti.Open();
+            SqlCommand Komutsil = new SqlCommand("Delete From Tbl_Elektrik Where DersAd = @k1", baglanti);
+            Komutsil.Parameters.AddWithValue("@k1", CrsmbChckLstBox.Text);
+            Komutsil.ExecuteNonQuery();
+            baglanti.Close();
+
             int indeks = CrsmbChckLstBox.SelectedIndex;
             CrsmbChckLstBox.Items.RemoveAt(indeks);
             CrsmbCikarTxtBox.Text = "";
@@ -102,6 +124,12 @@ namespace Ders_Calısma_Programı
 
         private void PrsmbEkle_Click(object sender, EventArgs e)
         {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Tbl_Elektrik (DersAd) values (@p1)", baglanti);
+            komut.Parameters.AddWithValue("@p1", PrsmbEkleTxtBox.Text);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+
             string metin2 = PrsmbEkleTxtBox.Text;
             PrsmbChckLstBox.Items.Add(metin2);
             PrsmbEkleTxtBox.Text = "";
@@ -109,6 +137,12 @@ namespace Ders_Calısma_Programı
 
         private void PrsmbCıkar_Click(object sender, EventArgs e)
         {
+            baglanti.Open();
+            SqlCommand Komutsil = new SqlCommand("Delete From Tbl_Elektrik Where DersAd = @k1", baglanti);
+            Komutsil.Parameters.AddWithValue("@k1", PrsmbChckLstBox.Text);
+            Komutsil.ExecuteNonQuery();
+            baglanti.Close();
+
             int indeks = PrsmbChckLstBox.SelectedIndex;
             PrsmbChckLstBox.Items.RemoveAt(indeks);
             PrsmbCikarTxtBox.Text = "";
@@ -123,6 +157,12 @@ namespace Ders_Calısma_Programı
 
         private void CumaEkle_Click(object sender, EventArgs e)
         {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Tbl_Elektrik (DersAd) values (@p1)", baglanti);
+            komut.Parameters.AddWithValue("@p1", CumaEkleTxtBox.Text);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+
             string metin2 = CumaEkleTxtBox.Text;
             CumaChckLstBox.Items.Add(metin2);
             CumaEkleTxtBox.Text = "";
@@ -130,6 +170,12 @@ namespace Ders_Calısma_Programı
 
         private void CumaCıkar_Click(object sender, EventArgs e)
         {
+            baglanti.Open();
+            SqlCommand Komutsil = new SqlCommand("Delete From Tbl_Elektrik Where DersAd = @k1", baglanti);
+            Komutsil.Parameters.AddWithValue("@k1", CumaChckLstBox.Text);
+            Komutsil.ExecuteNonQuery();
+            baglanti.Close();
+
             int indeks = CumaChckLstBox.SelectedIndex;
             CumaChckLstBox.Items.RemoveAt(indeks);
             CumaCikarTxtBox.Text = "";
@@ -144,6 +190,12 @@ namespace Ders_Calısma_Programı
 
         private void CmrtsiEkle_Click(object sender, EventArgs e)
         {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Tbl_Elektrik (DersAd) values (@p1)", baglanti);
+            komut.Parameters.AddWithValue("@p1", CmrtsiEkleTxtBox.Text);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+
             string metin2 = CmrtsiEkleTxtBox.Text;
             CmrtsiChckLstBox.Items.Add(metin2);
             CmrtsiEkleTxtBox.Text = "";
@@ -151,6 +203,12 @@ namespace Ders_Calısma_Programı
 
         private void CmrtsiCıkar_Click(object sender, EventArgs e)
         {
+            baglanti.Open();
+            SqlCommand Komutsil = new SqlCommand("Delete From Tbl_Elektrik Where DersAd = @k1", baglanti);
+            Komutsil.Parameters.AddWithValue("@k1", CmrtsiChckLstBox.Text);
+            Komutsil.ExecuteNonQuery();
+            baglanti.Close();
+
             int indeks = CmrtsiChckLstBox.SelectedIndex;
             CmrtsiChckLstBox.Items.RemoveAt(indeks);
             CmrtsiCikarTxtBox.Text = "";
@@ -165,6 +223,12 @@ namespace Ders_Calısma_Programı
 
         private void PazarEkle_Click(object sender, EventArgs e)
         {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("insert into Tbl_Elektrik (DersAd) values (@p1)", baglanti);
+            komut.Parameters.AddWithValue("@p1", PazarEkleTxtBox.Text);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+
             string metin2 = PazarEkleTxtBox.Text;
             PazarChckLstBox.Items.Add(metin2);
             PazarEkleTxtBox.Text = "";
@@ -172,6 +236,12 @@ namespace Ders_Calısma_Programı
 
         private void PazarCıkar_Click(object sender, EventArgs e)
         {
+            baglanti.Open();
+            SqlCommand Komutsil = new SqlCommand("Delete From Tbl_Elektrik Where DersAd = @k1", baglanti);
+            Komutsil.Parameters.AddWithValue("@k1", PazarChckLstBox.Text);
+            Komutsil.ExecuteNonQuery();
+            baglanti.Close();
+
             int indeks = PazarChckLstBox.SelectedIndex;
             PazarChckLstBox.Items.RemoveAt(indeks);
             PazarCikarTxtBox.Text = "";
@@ -182,5 +252,11 @@ namespace Ders_Calısma_Programı
             PazarCikarTxtBox.Text = PazarChckLstBox.SelectedItem.ToString();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DersPrgrmFrm frm = new DersPrgrmFrm();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

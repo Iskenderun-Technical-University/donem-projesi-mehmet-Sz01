@@ -47,5 +47,7 @@ namespace Ders_Calısma_Programı
             }
             baglanti.Close();
         }
+
+       
     }
 }

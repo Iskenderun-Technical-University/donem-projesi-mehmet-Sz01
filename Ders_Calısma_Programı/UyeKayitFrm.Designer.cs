@@ -56,6 +56,7 @@ namespace Ders_Calısma_Programı
             this.TxtAd.Name = "TxtAd";
             this.TxtAd.Size = new System.Drawing.Size(146, 27);
             this.TxtAd.TabIndex = 18;
+            this.TxtAd.TextChanged += new System.EventHandler(this.TxtAd_TextChanged);
             // 
             // TxtSifre
             // 

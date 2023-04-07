@@ -80,16 +80,17 @@ namespace Ders_Calısma_Programı
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("MV Boli", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("MV Boli", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(158, 9);
+            this.label1.Location = new System.Drawing.Point(220, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(717, 73);
+            this.label1.Size = new System.Drawing.Size(573, 73);
             this.label1.TabIndex = 2;
             this.label1.Text = "Elektrik Elektronik Mühendisliği";
             // 
@@ -576,12 +577,24 @@ namespace Ders_Calısma_Programı
             this.label15.TabIndex = 4;
             this.label15.Text = "Çarşamba";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 33);
+            this.button1.TabIndex = 58;
+            this.button1.Text = "<<Geri";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ElektrkFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1081, 730);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.PazarCıkar);
             this.Controls.Add(this.CmrtsiCıkar);
             this.Controls.Add(this.CumaCıkar);
@@ -632,6 +645,7 @@ namespace Ders_Calısma_Programı
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ElektrkFrm";
             this.Text = "Elektrik Elektronik Mühendisliği";
             this.ResumeLayout(false);
@@ -690,5 +704,6 @@ namespace Ders_Calısma_Programı
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button1;
     }
 }

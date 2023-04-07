@@ -7,19 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace Ders_Calısma_Programı
 {
-    public partial class BlgsyrFrm : Form
+    public partial class BiyomedikalFrm : Form
     {
-        public BlgsyrFrm()
+        public BiyomedikalFrm()
         {
             InitializeComponent();
         }
-
-
-        SqlConnection baglanti = new SqlConnection("Data Source=MEHMET\\SQLEXPRESS;Initial Catalog=Ders_Calısma;Integrated Security=True");
 
         private void PzrtsiEkle_Click(object sender, EventArgs e)
         {
@@ -91,7 +87,7 @@ namespace Ders_Calısma_Programı
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Geri_Click(object sender, EventArgs e)
         {
             DersPrgrmFrm frm = new DersPrgrmFrm();
             frm.Show();

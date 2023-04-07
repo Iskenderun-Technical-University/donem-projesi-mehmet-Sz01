@@ -34,5 +34,10 @@ namespace Ders_Calısma_Programı
             frm.Show();
             this.Hide();
         }
+
+        private void TxtAd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

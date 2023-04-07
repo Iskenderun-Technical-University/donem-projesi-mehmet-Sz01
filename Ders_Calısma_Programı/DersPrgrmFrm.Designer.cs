@@ -43,6 +43,7 @@ namespace Ders_Calısma_Programı
             this.PtrlBtn = new System.Windows.Forms.Button();
             this.BymdklGrpBox = new System.Windows.Forms.GroupBox();
             this.BymdklBtn = new System.Windows.Forms.Button();
+            this.Geri = new System.Windows.Forms.Button();
             this.ElktrkGrpBox.SuspendLayout();
             this.BlgsyrGrpBox.SuspendLayout();
             this.InstGrpBox.SuspendLayout();
@@ -134,6 +135,7 @@ namespace Ders_Calısma_Programı
             this.InstBtn.TabIndex = 2;
             this.InstBtn.Text = "Program";
             this.InstBtn.UseVisualStyleBackColor = false;
+            this.InstBtn.Click += new System.EventHandler(this.InstBtn_Click);
             // 
             // MknGrpBox
             // 
@@ -158,6 +160,7 @@ namespace Ders_Calısma_Programı
             this.MknBtn.TabIndex = 2;
             this.MknBtn.Text = "Program";
             this.MknBtn.UseVisualStyleBackColor = false;
+            this.MknBtn.Click += new System.EventHandler(this.MknBtn_Click);
             // 
             // PtrlGrpBox
             // 
@@ -182,6 +185,7 @@ namespace Ders_Calısma_Programı
             this.PtrlBtn.TabIndex = 2;
             this.PtrlBtn.Text = "Program";
             this.PtrlBtn.UseVisualStyleBackColor = false;
+            this.PtrlBtn.Click += new System.EventHandler(this.PtrlBtn_Click);
             // 
             // BymdklGrpBox
             // 
@@ -207,13 +211,26 @@ namespace Ders_Calısma_Programı
             this.BymdklBtn.TabIndex = 2;
             this.BymdklBtn.Text = "Program";
             this.BymdklBtn.UseVisualStyleBackColor = false;
+            this.BymdklBtn.Click += new System.EventHandler(this.BymdklBtn_Click);
+            // 
+            // Geri
+            // 
+            this.Geri.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Geri.Location = new System.Drawing.Point(12, 12);
+            this.Geri.Name = "Geri";
+            this.Geri.Size = new System.Drawing.Size(82, 33);
+            this.Geri.TabIndex = 6;
+            this.Geri.Text = "<<Geri";
+            this.Geri.UseVisualStyleBackColor = true;
+            this.Geri.Click += new System.EventHandler(this.Geri_Click);
             // 
             // DersPrgrmFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1015, 508);
+            this.ClientSize = new System.Drawing.Size(983, 495);
+            this.Controls.Add(this.Geri);
             this.Controls.Add(this.BymdklGrpBox);
             this.Controls.Add(this.PtrlGrpBox);
             this.Controls.Add(this.MknGrpBox);
@@ -221,6 +238,7 @@ namespace Ders_Calısma_Programı
             this.Controls.Add(this.BlgsyrGrpBox);
             this.Controls.Add(this.ElktrkGrpBox);
             this.Controls.Add(this.DersCalısmaProgramı);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "DersPrgrmFrm";
             this.Text = "Ders Çalışma Programı";
             this.ElktrkGrpBox.ResumeLayout(false);
@@ -248,6 +266,7 @@ namespace Ders_Calısma_Programı
         private System.Windows.Forms.Button PtrlBtn;
         private System.Windows.Forms.GroupBox BymdklGrpBox;
         private System.Windows.Forms.Button BymdklBtn;
+        private System.Windows.Forms.Button Geri;
     }
 }
 

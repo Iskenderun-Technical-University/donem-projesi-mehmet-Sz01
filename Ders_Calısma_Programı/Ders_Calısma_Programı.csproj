@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BiyomadikalFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiyomadikalFrm.Designer.cs">
+      <DependentUpon>BiyomadikalFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BlgsyrFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,24 @@
     <Compile Include="GirisFrm.Designer.cs">
       <DependentUpon>GirisFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="InsaatFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsaatFrm.Designer.cs">
+      <DependentUpon>InsaatFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakineFrm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakineFrm1.Designer.cs">
+      <DependentUpon>MakineFrm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PetrolFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PetrolFrm.Designer.cs">
+      <DependentUpon>PetrolFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UyeKayitFrm.cs">
@@ -78,6 +102,9 @@
     <Compile Include="UyeKayitFrm.Designer.cs">
       <DependentUpon>UyeKayitFrm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BiyomadikalFrm.resx">
+      <DependentUpon>BiyomadikalFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BlgsyrFrm.resx">
       <DependentUpon>BlgsyrFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +116,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GirisFrm.resx">
       <DependentUpon>GirisFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsaatFrm.resx">
+      <DependentUpon>InsaatFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakineFrm1.resx">
+      <DependentUpon>MakineFrm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PetrolFrm.resx">
+      <DependentUpon>PetrolFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
