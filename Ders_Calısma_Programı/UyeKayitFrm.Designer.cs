@@ -56,7 +56,6 @@ namespace Ders_Calısma_Programı
             this.TxtAd.Name = "TxtAd";
             this.TxtAd.Size = new System.Drawing.Size(146, 27);
             this.TxtAd.TabIndex = 18;
-            this.TxtAd.TextChanged += new System.EventHandler(this.TxtAd_TextChanged);
             // 
             // TxtSifre
             // 
@@ -65,6 +64,7 @@ namespace Ders_Calısma_Programı
             this.TxtSifre.Size = new System.Drawing.Size(146, 27);
             this.TxtSifre.TabIndex = 19;
             this.TxtSifre.UseSystemPasswordChar = true;
+            this.TxtSifre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtSifre_KeyDown);
             // 
             // KaydetBtn
             // 
@@ -114,6 +114,7 @@ namespace Ders_Calısma_Programı
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UyeKayitFrm";
             this.Text = "Üye Kayıt ";

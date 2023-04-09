@@ -104,6 +104,7 @@ namespace Ders_Calısma_Programı
             this.TxtSifre.Size = new System.Drawing.Size(146, 22);
             this.TxtSifre.TabIndex = 13;
             this.TxtSifre.UseSystemPasswordChar = true;
+            this.TxtSifre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtSifre_KeyDown);
             // 
             // TxtAd
             // 
@@ -125,6 +126,7 @@ namespace Ders_Calısma_Programı
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "GirisFrm";
             this.Text = "GirisFrm";
             this.ResumeLayout(false);

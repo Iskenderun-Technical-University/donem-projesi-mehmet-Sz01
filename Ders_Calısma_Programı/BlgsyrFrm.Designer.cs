@@ -80,7 +80,7 @@ namespace Ders_Calısma_Programı
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.GirisBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -577,16 +577,16 @@ namespace Ders_Calısma_Programı
             this.label2.TabIndex = 8;
             this.label2.Text = "Pazartesi";
             // 
-            // button1
+            // GirisBtn
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 33);
-            this.button1.TabIndex = 57;
-            this.button1.Text = "<<Geri";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.GirisBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.GirisBtn.Location = new System.Drawing.Point(12, 12);
+            this.GirisBtn.Name = "GirisBtn";
+            this.GirisBtn.Size = new System.Drawing.Size(86, 33);
+            this.GirisBtn.TabIndex = 57;
+            this.GirisBtn.Text = "<<Geri";
+            this.GirisBtn.UseVisualStyleBackColor = true;
+            this.GirisBtn.Click += new System.EventHandler(this.GirisBtn_Click);
             // 
             // BlgsyrFrm
             // 
@@ -594,7 +594,7 @@ namespace Ders_Calısma_Programı
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1066, 758);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.GirisBtn);
             this.Controls.Add(this.PazarCıkar);
             this.Controls.Add(this.CmrtsiCıkar);
             this.Controls.Add(this.CumaCıkar);
@@ -705,6 +705,6 @@ namespace Ders_Calısma_Programı
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button GirisBtn;
     }
 }

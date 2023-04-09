@@ -48,6 +48,10 @@ namespace Ders_Calısma_Programı
             baglanti.Close();
         }
 
-       
+        private void TxtSifre_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                GirisBtn.PerformClick();
+        }
     }
 }

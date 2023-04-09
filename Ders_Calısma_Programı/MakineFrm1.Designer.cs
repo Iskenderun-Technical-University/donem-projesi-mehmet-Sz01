@@ -30,7 +30,7 @@ namespace Ders_Calısma_Programı
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MakineFrm));
-            this.button1 = new System.Windows.Forms.Button();
+            this.GeriBtn = new System.Windows.Forms.Button();
             this.PazarCıkar = new System.Windows.Forms.Button();
             this.CmrtsiCıkar = new System.Windows.Forms.Button();
             this.CumaCıkar = new System.Windows.Forms.Button();
@@ -83,16 +83,16 @@ namespace Ders_Calısma_Programı
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // GeriBtn
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(20, 17);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 33);
-            this.button1.TabIndex = 109;
-            this.button1.Text = "<<Geri";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.GeriBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.GeriBtn.Location = new System.Drawing.Point(20, 17);
+            this.GeriBtn.Name = "GeriBtn";
+            this.GeriBtn.Size = new System.Drawing.Size(86, 33);
+            this.GeriBtn.TabIndex = 109;
+            this.GeriBtn.Text = "<<Geri";
+            this.GeriBtn.UseVisualStyleBackColor = true;
+            this.GeriBtn.Click += new System.EventHandler(this.GeriBtn_Click);
             // 
             // PazarCıkar
             // 
@@ -594,7 +594,7 @@ namespace Ders_Calısma_Programı
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1099, 756);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.GeriBtn);
             this.Controls.Add(this.PazarCıkar);
             this.Controls.Add(this.CmrtsiCıkar);
             this.Controls.Add(this.CumaCıkar);
@@ -645,6 +645,7 @@ namespace Ders_Calısma_Programı
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MakineFrm";
             this.Text = "Makine Mühendisliği";
             this.ResumeLayout(false);
@@ -654,7 +655,7 @@ namespace Ders_Calısma_Programı
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button GeriBtn;
         private System.Windows.Forms.Button PazarCıkar;
         private System.Windows.Forms.Button CmrtsiCıkar;
         private System.Windows.Forms.Button CumaCıkar;

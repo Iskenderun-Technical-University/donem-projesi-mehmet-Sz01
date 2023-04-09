@@ -18,6 +18,8 @@ namespace Ders_Calısma_Programı
             InitializeComponent();
         }
 
+        // Veri tabanı bağlama uzantısı
+
         SqlConnection baglanti = new SqlConnection("Data Source=MEHMET\\SQLEXPRESS;Initial Catalog=Ders_Calısma;Integrated Security=True");
 
 

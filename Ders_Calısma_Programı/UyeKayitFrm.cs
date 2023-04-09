@@ -35,9 +35,12 @@ namespace Ders_Calısma_Programı
             this.Hide();
         }
 
-        private void TxtAd_TextChanged(object sender, EventArgs e)
-        {
+      
 
+        private void TxtSifre_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                KaydetBtn.PerformClick();
         }
     }
 }
